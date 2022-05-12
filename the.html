@@ -1,0 +1,36 @@
+<body>
+	<style type="text/css">
+		.box{
+			background-color: red;
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 0.1s;
+		}
+	</style>
+	<div class="box">
+		
+	</div>
+	<script type="text/javascript">
+		let box = document.querySelector(".box")
+		document.addEventListener("keydown", function(arg){
+			console.log(arg);
+			if(arg.code=="KeyW"){
+				console.log("Иду вперед")
+			}
+			else if(arg.code=="KeyS"){
+				console.log("Иду назад")
+			}
+			else if(arg.code=="KeyD"){
+				console.log("Иду вправо")
+			}
+			else if(arg.code=="KeyA"){
+				console.log("Иду влево")
+			}else{
+				console.log("нет")
+			}
+		})
+	</script>
+</body>
