@@ -1,9 +1,13 @@
+@font-face{
+    font-family: tf2build;
+    src: url(font/tf2build.ttf); 
+}
 body{
     margin:0;
     padding:0;
     background-image: url("bg.jpg");
+    font-family: tf2build;
 }
-
 .choice-player-1, .choice-player-2{
     height: 160px;
     width: 200px;
@@ -11,8 +15,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-size: 100% 100%;
+    border-radius: 15px;
 }
-
 p{  
     background: white;
     width: 300px;
@@ -24,4 +28,10 @@ p{
 }
 h1{
     color: white;
+}
+.pos1{
+    background-size: 100% 100%;
+}
+.pos2{
+    background-size: 100% 100%; 
 }
